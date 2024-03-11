@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class inverterString {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite uma string: ");
+        String recebe = scanner.nextLine();
+
+        String stringAlterada = alterarOrdem(recebe);
+
+        System.out.println("String revertida: " + stringAlterada);
+    }
+
+    public static String alterarOrdem(String str) {
+        StringBuilder reverter = new StringBuilder();
+
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reverter.append(str.charAt(i));
+        }
+
+        return reverter.toString();
+    }
+}
