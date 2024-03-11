@@ -1,23 +1,23 @@
 public class FaturamentoDistribuidora {
     public static void main(String[] args) {
-        // Valores de faturamento mensal por estado
+        
         double sp = 67836.43;
         double rj = 36678.66;
         double mg = 29229.88;
         double es = 27165.48;
         double outros = 19849.53;
 
-        // Calcular o total mensal
+       
         double totalMensal = sp + rj + mg + es + outros;
 
-        // Calcular percentual de representação de cada estado
+       
         double percentualSP = (sp / totalMensal) * 100;
         double percentualRJ = (rj / totalMensal) * 100;
         double percentualMG = (mg / totalMensal) * 100;
         double percentualES = (es / totalMensal) * 100;
         double percentualOutros = (outros / totalMensal) * 100;
 
-        // Exibir os resultados
+       
         System.out.printf("Percentual de representação de cada estado:\n");
         System.out.printf("SP: %.2f%%\n", percentualSP);
         System.out.printf("RJ: %.2f%%\n", percentualRJ);
